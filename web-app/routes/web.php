@@ -1,7 +1,7 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
-
+//import Controller
+use App\Http\Controllers\Web;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,14 +12,15 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
-   // return view('welcome');
-   return "Hallo namaku adalah Laravel, salam kenal";
+//return view('welcome');
+return "Hallo namaku adalah Laravel, Salam Kenal";
 });
-
 //route baru
 Route::get('/about', function () {
 //return view('welcome');
 return "<h2>Ini adalah laman About</h2>";
 });
+
+//route ke controller Web ke fungsi home
+Route::get('/web',[Web::class, 'home']);
