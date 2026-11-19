@@ -17,3 +17,9 @@ Route::get('/', function () {
    // return view('welcome');
    return "Hallo namaku adalah Laravel, salam kenal";
 });
+
+//route baru
+Route::get('/about', function () {
+//return view('welcome');
+return "<h2>Ini adalah laman About</h2>";
+});
