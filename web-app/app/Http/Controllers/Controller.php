@@ -8,5 +8,5 @@ class Web extends Controller {
 }
 public function profil($Sheva) {
     return "<h2>Laman Profil ".$Sheva."</h2>"
-}
+    }
 }
