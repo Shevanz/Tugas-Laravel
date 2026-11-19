@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 class Web extends Controller {
-    public function profil($andro) {
-        return "<h2>Laman Profil ",$andro."<\h2>";
+    public function home() {
+        return "<h1>Ini adalah Controllers Web</h1>";
 }
-public function profil() {
-    return "<h2>Laman Profile</h2>"
+public function profil($Sheva) {
+    return "<h2>Laman Profil ".$Sheva."</h2>"
 }
 }
