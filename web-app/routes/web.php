@@ -24,3 +24,5 @@ return "<h2>Ini adalah laman About</h2>";
 
 //route ke controller Web ke fungsi home
 Route::get('/web',[Web::class, 'home']);
+//route ke controller Web ke fungsi profil
+Route::get('/profil',[Web::class, 'profil']);
